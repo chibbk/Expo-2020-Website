@@ -1,0 +1,115 @@
+<html>
+<head>
+<style>
+
+table, td
+{
+    width: 65%;
+    border: 3px solid rgb(15, 41, 155);
+    background-color: blanchedalmond;
+    font-size: 15px;
+
+}
+.mapouter
+{
+border: 5px dashed red;
+}
+span
+{
+    font-weight: 600;
+    font-size: 20px;
+}
+hr
+{
+    background-color: darkblue;
+    height: 6.9px;
+    width: 97%;
+    border: 1px solid darkblue;
+}
+select
+{
+    border: 4px solid black;
+}
+.A
+{
+    border: 2px solid red;
+}
+
+.title
+{
+    border: 4px dashed red;
+    background-color: blanchedalmond;
+    font-weight: 900;
+    font-family: 'Times New Roman';
+    font-style: oblique;
+    width: 40%;
+}
+
+caption
+{
+    color: red;
+    background-color: lightgrey;
+    border: 3px solid rgb(15, 41, 155);
+    font-size: 20px;
+}
+.text
+{
+    color:red;
+    text-decoration:underline;
+    font-size: 20px;
+}
+</style>
+<title>
+Expo2020/tickets
+</title>
+</head>
+<body background = 'images/World_Flag_map.png'>
+<br><br><center><h1 class = title>Purchase Tickets to Expo2020 Dubai</h1><br><br>
+<table cellpadding = 5>
+<caption><img src="images/logo.jpeg" height="60" width="60"  align = left><br><a href="home.html">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="USA.html">USA</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="UAE.html">UAE</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="Germany.html">Germany</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="Egypt.html">Egypt</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="Morocco.html">Morocco</a></caption>
+<tr>
+<td>
+<form onsubmit="alert('Thank you for your purchase')"><span>Log in:</span><br><input type="text" placeholder="Enter your username" size = 30 class = A><br>
+<input type="password" placeholder="Enter your password" size = 30 maxlength= 8 class = A><br><br>
+<select>
+<option >+20</option>
+<option >+49</option>
+<option >+91</option>
+<option >+961</option>
+<option >+212</option>
+<option >+966</option>
+<option selected>+971</option>
+<option >+44</option>
+<option >+1</option>
+</select>
+<input type="text" placeholder="Enter your phone number" style="border:4px solid black;">
+<br><br><hr>
+<br><span class = text> Here is our location: </span><br><br>
+<center><div class="mapouter"><div class="gmap_canvas"><iframe width="320" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Expo2020&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:320px;}</style><a href="https://www.embedgooglemap.net">embed google map without api key</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:320px;}</style></div></div></center>
+<br>
+<ol>
+<li> <span>What type of ticket would you like to purchase? </span><br>
+<input type="radio" name="one">1-day ticket <br>
+<input type="radio" name="one">Multi-day ticket <br>
+<input type="radio" name="one">Season pass <br>
+<br>
+</li>
+<li> <span>How many people are in your party? </span><br>
+    <input type="radio" name="two">1 person<br>
+    <input type="radio" name="two">2 persons<br>
+    <input type="radio" name="two">3+ persons<br>
+    <br>
+    </li>
+    <br>
+</ol>
+<span>Please enter your age(s) in the box below:</span><br>
+<textarea placeholder = 'Ex: 2 people above 18, one below'cols="30" rows="10"></textarea> <br>
+<input type="reset">
+<input type="submit" value="confirm purchase">
+</form>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
